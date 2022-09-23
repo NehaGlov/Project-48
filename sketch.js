@@ -274,21 +274,7 @@ function Score()
         text("life: "+ life, 500, 100);
   
 }
-async function getbackgroundimage(){
-var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
-var responseJson = await response.json()
-var datetime = responseJson.datetime
-var hour = datetime.slice(11,13)
-if(hour>=06 && hour<=17){
-  bg.addImage(bgImg)
-  bg.scale=2.5
-}
-else{
-  bg.addImage(bgImg2)
-  bg.scale=1.5
-  bg.x=350
-  bg.y=150
-}
+
 }
   
 function coins(){
