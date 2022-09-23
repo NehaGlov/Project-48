@@ -269,7 +269,7 @@ function Score()
          }
         textFont("algerian");
         textSize(30);
-        fill("black");
+        fill("yellow");
         text("Score: "+ score, 500, 50);
         text("life: "+ life, 500, 100);
   
